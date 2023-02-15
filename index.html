@@ -1,7 +1,24 @@
   <head>
     <title>HTML Noobism!</title>
     <script async src="./javascript/index.js"></script>
-        <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    
+    <!-- Matomo -->
+    <script> 
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//matomo2.d.dom.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '5']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
   </head>
   <body>
     <h1>Hello All!</h1>
@@ -14,20 +31,20 @@
       </div>
 
       <div class="section-style">
-        <img src="./images/login-hover.svg" alt="" />
-        <p>A random Login Bildchen.</p>
+        <img src="./images/search-hover.svg" alt="" />
+        <p>A random Such Bildchen.</p>
       </div>
     </div>
 
     <div class="image-section">
       <div class="section-style"> 
-        <pre class="EnlighterJSRAW" data-enlighter-language="html"><a href="http://google.de" target="_blank" class="linkbutton">Google</a></pre>
+        <a href="http://google.de" target="_blank" class="linkbutton">Google</a>
       </div>
     </div>
 
     <div class="image-section"> 
       <div class="section-style">
-        <pre class="EnlighterJSRAW" data-enlighter-language="html"><a href="http://dom.de" target="_blank"  class="linkbutton">DOM</a></pre>
+        <a href="http://dom.de" target="_blank"  class="linkbutton" onclick="_paq.push(['trackEvent', 'Zielseiten', 'Die DOM Homepage aurufen', 'dom_hp']);">DOM</a>
       </div>
     </div>
 
@@ -35,7 +52,7 @@
     <div class="image-section">
       <div class="section-style">
         <img src="./images/chip-bestes-netz-test-mobilfunknetze-2023-telekom.png" alt="" />
-        <p>A random bestes netz von Welt.</p>
+        <p>A random bestes Netz von Welt.</p>
       </div>
 
       <div class="section-style">
